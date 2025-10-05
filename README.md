@@ -164,7 +164,7 @@ Publish the website in the LocalHost.
         </ul>
       </div>
 
-      <div class="author">By Manoj Kumar N</div>
+      <div class="author">B.TAMIZHAN </div>
     </div>
   </div>
 </body>
