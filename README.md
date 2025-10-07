@@ -1,7 +1,6 @@
 # Ex.06 Book Front Cover Page Design
 # Date:05/10/2025
 # Ref no:25018064
-# Name:TAMIZHAN B
 # AIM:
 To design a book front cover page using HTML and CSS.
 
@@ -171,7 +170,7 @@ Publish the website in the LocalHost.
 
 
 # OUTPUT:
-<img width="393" height="632" alt="image" src="https://github.com/user-attachments/assets/cfe69dd3-f5d7-43b0-9715-e8376567c2de" />
+   ![Image 2025-10-07 at 09 16 59_427b8488](https://github.com/user-attachments/assets/0c944795-16b0-43dd-a181-aeae039367dd)
 
 
 # RESULT:
