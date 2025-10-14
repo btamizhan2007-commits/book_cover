@@ -30,147 +30,141 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 # PROGRAM:<!doctype html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Environmental Awareness — Title Page</title>
-
-  <style>
-    :root{
-      --page-width: 500px;   /* page width */
-      --card-pad: 24px;      /* padding */
-    }
-
-    *{box-sizing:border-box;margin:0;padding:0}
-
-    html,body{
-      height:100%;
-      font-family: "Inter", sans-serif;
-      background: #000;
-      color:#fff;
-    }
-
-    .wrap {
-      min-height:100%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:20px;
-    }
-
-    .card {
-      width: min(90vw, var(--page-width));
-      aspect-ratio: 3 / 4;   /* book-like ratio */
-      position:relative;
-      border-radius: 10px;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.8);
-      overflow:hidden;
-
-      /* Gold border */
-      border: 2px solid gold;
-
-      /* Black edges + white flower background */
-      background:
-        radial-gradient(circle at center, rgba(15,15,15,0.9) 70%, rgba(0,0,0,1) 100%),
-        url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
-    }
-
-    .title-wrap{
-      z-index:2;
-      position:relative;
-      text-align:center;
-      padding:40px 16px;
-    }
-
-    h1.title{
-      font-family:"Playfair Display", serif;
-      font-size: clamp(22px, 5vw, 36px);
-      margin-bottom: 10px;
-      color:#fff;
-      text-shadow:0 3px 10px rgba(0,0,0,0.7);
-    }
-
-    p.subtitle{
-      font-size: clamp(11px, 2vw, 14px);
-      color:#f0f0f0;
-      opacity:0.9;
-      margin-bottom:14px;
-    }
-
-    .divider{
-      width:50%;
-      height:1px;
-      background: rgba(255,255,255,0.3);
-      margin:14px auto;
-    }
-
-    .points {
-      position:absolute;
-      left: var(--card-pad);
-      bottom: 50px;
-      z-index:2;
-      background: rgba(0,0,0,0.35);
-      padding:6px 10px;
-      border-radius:6px;
-      font-size:10px;
-      line-height:1.3;
-      max-width:70%;
-      opacity:0.95;
-    }
-
-    .points ul {
-      margin:0;
-      padding-left:14px;
-    }
-
-    .points li {
-      margin-bottom:3px;
-    }
-
-    .author {
-      position:absolute;
-      right: var(--card-pad);
-      bottom: var(--card-pad);
-      font-weight:600;
-      font-size:11px;
-      color:#fff;
-      background: rgba(0,0,0,0.4);
-      padding:6px 10px;
-      border-radius:6px;
-    }
-  </style>
+    <title>Book Cover</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <div class="title-wrap">
-        <h1 class="title">Environmental Awareness</h1>
-        <p class="subtitle">Understanding our environment and protecting nature</p>
-        <div class="divider"></div>
-        <p class="subtitle">Book Title Page</p>
-      </div>
+    <div class="cover">
+        <div class="border">
+            <h3 class="top">SEC Insights</h3>
+            <h1>SPECIFIC AND TECHNOLOGIES</h1>
+            <p class="sub"> shaping a smarter world, one byte at a time</p>
 
-      <!-- Points section -->
-      <div class="points">
-        <ul>
-          <li>Protect natural resources</li>
-          <li>Reduce pollution and waste</li>
-          <li>Conserve biodiversity</li>
-          <li>Promote sustainable living</li>
-        </ul>
-      </div>
+            <div class="left">
+                <h4>FIVTH EDITION</h4>
+                <div class="name">
+                    <P>Tamizhan b (25018064)</p>
+                </div>
+            </div>
 
-      <div class="author">B.TAMIZHAN </div>
+            <div class="right">
+                <img src="AUTHOR.JPG" alt="Author Photo">
+                <hr class="line">
+                <div>
+                    <p>SEC</p>
+                </div>
+            </div>
+
+        </div>
+        
     </div>
-  </div>
 </body>
 </html>
+ 
+ style.css
+ body {
+    background-color: #9b26ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cover {
+    width: 400px;
+    height: 550px;
+    background:url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    color: rgb(20, 20, 20);
+    font-family: 'Times New Roman', sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.border {
+    border: 4px solid rgb(15, 15, 16);
+    margin: -7px;
+    height: 95%;
+    padding: 15px;
+    position: relative;
+}
+
+.top {
+    position: relative;
+    bottom: 20px;
+    right: 120px;
+    margin: 0;
+    padding: 6px 8px 6px 0;
+    display: inline-block;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(26, 166, 225);
+    color: solid #9122ac; /* Note: This should likely be 'color: red;' for the text color */
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.sub {
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.left h4 {
+    position: relative;
+    top: 200px;
+    right: 90px;
+    font-size: 20px;
+    font-style: unset;
+    font-weight: bold;
+    margin: 0;
+}
+
+.left p {
+    position: relative;
+    top: 240px;
+    right: 100px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.right img {
+    position: relative;
+    top: 5px;
+    left: 90px;
+    width: 130px;
+    height: 150px;
+    border: 2px solid rgb(9, 134, 176);
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(23, 23, 23);
+}
+
+.right p {
+    font-style: initial;
+    font-size: larger;
+    top: 20px;
+    left: 100px;
+    margin-top: 5px;
+    font-weight: bold;
+    position: relative;
+}
 
 
 
 # OUTPUT:
-   ![Image 2025-10-07 at 09 16 59_427b8488](https://github.com/user-attachments/assets/0c944795-16b0-43dd-a181-aeae039367dd)
+   <img width="394" height="633" alt="Screenshot 2025-10-05 204700" src="https://github.com/user-attachments/assets/d1fa1062-42e1-40b2-b449-e2a60b05dfe6" />
+
 
 
 # RESULT:
