@@ -30,6 +30,8 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 # PROGRAM:<!doctype html>
+```
+
 <html>
 <head>
     <title>Book Cover</title>
@@ -160,7 +162,7 @@ h1 {
     position: relative;
 }
 
-
+```
 
 # OUTPUT:
    <img width="394" height="633" alt="Screenshot 2025-10-05 204700" src="https://github.com/user-attachments/assets/d1fa1062-42e1-40b2-b449-e2a60b05dfe6" />
